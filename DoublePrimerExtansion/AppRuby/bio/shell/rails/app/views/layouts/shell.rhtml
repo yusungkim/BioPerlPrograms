@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>BioRuby shell on Rails</title>
+  <link href="/stylesheets/main.css" media="screen" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="side">
+  <img src="/images/icon.png">
+  <br>
+<!--
+  <h2>Status</h2>
+  <ul><li><%= @connected ? "Not Connected" : "Connected" %></li></ul>
+  <h2>History</h2>
+  <ul>
+    <li>
+      <%= link_to "History", :action => "history" %>
+    </li>
+  </ul>
+-->
+  <h2>Local variables</h2>
+  <ul>
+  <% @local_vars.each do |idx, var| %>
+  <li><%= link_to idx, {:action => "show", :id => idx}%></li>
+  <% end %>
+  </ul>
+
+</div>
+
+<div id="banner">
+  BioRuby shell on Rails
+</div>
+
+<div id="main">
+  <%= @content_for_layout %>
+</div>
+</body>

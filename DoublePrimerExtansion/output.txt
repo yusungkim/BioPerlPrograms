@@ -1,0 +1,127 @@
+First Selection => Fw1 x Rv1 -> OK, Score:70
+
+   Second Selection => partialFw x Rv, Score:56
+   Second Selection => Fw x partialRv, Socre:56
+
+First Selection => Fw1 x Rv2 -> OK, Score:70
+
+   Second Selection => partialFw x Rv, Score:65
+   Second Selection => Fw x partialRv, Socre:65
+
+First Selection => Fw1 x Rv3 -> OK, Score:70
+
+   Second Selection => partialFw x Rv, Score:55
+   Second Selection => Fw x partialRv, Socre:55
+
+First Selection => Fw1 x Rv4 -> OK, Score:70
+
+   Second Selection => partialFw x Rv, Score:54
+   Second Selection => Fw x partialRv, Socre:54
+
+First Selection => Fw1 x Rv5 -> Not Good, Score:117
+First Selection => Fw2 x Rv1 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:47
+   Second Selection => Fw x partialRv, Socre:47
+
+First Selection => Fw2 x Rv2 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:47
+   Second Selection => Fw x partialRv, Socre:49
+
+First Selection => Fw2 x Rv3 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:52
+   Second Selection => Fw x partialRv, Socre:52
+
+First Selection => Fw2 x Rv4 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:64
+   Second Selection => Fw x partialRv, Socre:64
+
+First Selection => Fw2 x Rv5 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:48
+   Second Selection => Fw x partialRv, Socre:49
+
+First Selection => Fw3 x Rv1 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:71
+   Second Selection => Fw x partialRv, Socre:71
+
+First Selection => Fw3 x Rv2 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:44
+   Second Selection => Fw x partialRv, Socre:44
+
+First Selection => Fw3 x Rv3 -> Not Good, Score:86
+First Selection => Fw3 x Rv4 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:57
+   Second Selection => Fw x partialRv, Socre:57
+
+First Selection => Fw3 x Rv5 -> OK, Score:71
+
+   Second Selection => partialFw x Rv, Score:65
+   Second Selection => Fw x partialRv, Socre:65
+
+First Selection => Fw4 x Rv1 -> OK, Score:72
+
+   Second Selection => partialFw x Rv, Score:41
+   Second Selection => Fw x partialRv, Socre:41
+
+First Selection => Fw4 x Rv2 -> OK, Score:72
+
+   Second Selection => partialFw x Rv, Score:72
+   Second Selection => Fw x partialRv, Socre:72
+
+First Selection => Fw4 x Rv3 -> Not Good, Score:80
+First Selection => Fw4 x Rv4 -> OK, Score:72
+
+   Second Selection => partialFw x Rv, Score:59
+   Second Selection => Fw x partialRv, Socre:59
+
+First Selection => Fw4 x Rv5 -> Not Good, Score:82
+First Selection => Fw5 x Rv1 -> Not Good, Score:96
+First Selection => Fw5 x Rv2 -> OK, Score:72
+
+   Second Selection => partialFw x Rv, Score:67
+   Second Selection => Fw x partialRv, Socre:67
+
+First Selection => Fw5 x Rv3 -> Not Good, Score:107
+First Selection => Fw5 x Rv4 -> Not Good, Score:97
+First Selection => Fw5 x Rv5 -> Not Good, Score:79
+=====================================================================
+<Summary>
+We compaired 5 random Forward sequences
+         and 5 random Reverse sequences for each Forward sequence.
+1st Selection	: 17 was selected from 25 combination set.
+2nd Selection	: Fw4 x Rv1 was selected from 1st Selection set.
+
+<Detail>
+1st Selection (Score Board : Good candidates were showed in [ ])
+Fw\Rv	  1	  2	  3	  4	  5	
+  1	[ 70]	[ 70]	[ 70]	[ 70]	 117	
+  2	[ 71]	[ 71]	[ 71]	[ 71]	[ 71]	
+  3	[ 71]	[ 71]	  86	[ 71]	[ 71]	
+  4	[ 72]	[ 72]	  80	[ 72]	  82	
+  5	  96	[ 72]	 107	  97	  79	
+
+Fw4 (186 bases) x Rv1 (186 bases)
+ => Score 72
+
+Partial_Fw4 (174 bases) x Rv1 (186 bases)
+ => Score 41
+
+Fw4 (186 bases) x Partial_Rv1 (174 bases)
+ => Score 41
+
+Full Sequence (length =347)
+GTTGGCACGTCATATGCTCTTCAGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTNCCNGGNAARGGNGTNCCNGGNGTNGGNGTAGGAAGAGTAACGAGCTCATGC
+
+Suggested Forward Primer (length = 186)
+"GTTGGCACGTCATATGCTCTTCAGTTCCTGGAGTTGGAGTCCCAGGTAAAGGTGTTCCAGGAGTTGGAGTACCAGGTAAAGGTGTACCGGGTGTAGGAGTTCCGGGTGTTGGAGTTCCAGGAAAGGGCGTCCCGGGAGTAGGAGTACCAGGTAAAGGTGTTCCGGGCGTCGGCGTGCCGGGCGTCG"
+
+Suggested Reverse Primer (length = 186)
+"GCATGAGCTCGTTACTCTTCCTACACCAACACCAGGGACTCCTTTCCCAGGAACTCCGACCCCTGGTACTCCTTTTCCAGGAACACCCACACCAGGCACACCAACGCCTGGTACACCTTTCCCTGGGACACCTACACCAGGTACTCCTTTACCAGGGACTCCGACGCCCGGCACGCCGACGCCCGG"
+

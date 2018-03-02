@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+#
+# = BioRuby shell on Rails server - GUI for the BioRuby shell
+#
+# Copyright::   Copyright (C) 2006
+#               Nobuya Tanaka <t@chemruby.org>,
+#               Toshiaki Katayama <k@bioruby.org>
+# License::     Ruby's
+#
+# $Id: server,v 1.1 2006/02/27 11:16:23 k Exp $
+#
+
+require 'bio/shell'
+require 'drb/drb'
+
+require './app/models/shell_connection'
+$drb_server = ShellConnection.new
+
+## Access Control List
+#
+# require 'drb/acl'
+#
+# list = %w(deny all
+#           allow 127.0.0.1
+#          )
+# acl = ACL.new(list, ACL::DENY_ALLOW)
+# DRb.install_acl(acl)
+#
+
+STDOUT.sync = true
+
+#uri = "druby://localhost:0"
+uri = 'druby://localhost:81064' # baioroji-
+DRb.start_service(uri, $drb_server)
+puts DRb.uri
+
+puts "starting ..."
+
+require './config/boot'
+require 'commands/server'
+
+puts "exiting ..."
